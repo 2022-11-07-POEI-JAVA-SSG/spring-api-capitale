@@ -22,4 +22,9 @@ public class CountryService {
             return false;
         }
     }
+
+    public Country getCountryById(Integer id){
+        // TODO : vérifier si Optional non vide
+        return countryRepository.findById(id).get();
+    }
 }
